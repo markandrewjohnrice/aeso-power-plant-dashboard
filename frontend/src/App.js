@@ -59,7 +59,9 @@ function App() {
         // Add to hourly data for mini chart
         plantMap[point.plant].hourlydata.push({
           hour: point.time.split(' ')[1].substring(0, 5), // Get HH:MM
-          generation: point.totalnetgeneration
+          generation: point.totalnetgeneration,
+          upperlimit: point.upperlimit,
+          lowerlimit: point.lowerlimit
         });
       });
 
@@ -246,6 +248,25 @@ function App() {
                     stroke="#667eea"
                     strokeWidth={2}
                     dot={false}
+                    name="Generation"
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="upperlimit"
+                    stroke="#ef4444"
+                    strokeWidth={1}
+                    strokeDasharray="5 5"
+                    dot={false}
+                    name="Upper Limit"
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="lowerlimit"
+                    stroke="#f59e0b"
+                    strokeWidth={1}
+                    strokeDasharray="5 5"
+                    dot={false}
+                    name="Lower Limit"
                   />
                 </LineChart>
               </ResponsiveContainer>

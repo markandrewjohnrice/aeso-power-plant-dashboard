@@ -1,0 +1,40 @@
+{
+  "plants": [
+    {
+      "assetName": "Shepard Energy Centre",
+      "assetMnemonic": "shepard",
+      "maximumCapability": 800,
+      "rampRate": 10
+    },
+    {
+      "assetName": "Genesee Power Plant",
+      "assetMnemonic": "genesee",
+      "maximumCapability": 1350,
+      "rampRate": 8
+    },
+    {
+      "assetName": "Sundance Power Plant",
+      "assetMnemonic": "sundance",
+      "maximumCapability": 2000,
+      "rampRate": 7
+    },
+    {
+      "assetName": "Keephills Power Plant",
+      "assetMnemonic": "keephills",
+      "maximumCapability": 1200,
+      "rampRate": 9
+    },
+    {
+      "assetName": "Clover Bar Energy Centre",
+      "assetMnemonic": "cloverbar",
+      "maximumCapability": 650,
+      "rampRate": 12
+    },
+    {
+      "assetName": "Battle River Power Plant",
+      "assetMnemonic": "battleriver",
+      "maximumCapability": 900,
+      "rampRate": 6
+    }
+  ]
+}
